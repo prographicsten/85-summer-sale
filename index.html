@@ -15,10 +15,10 @@
 <body class="works_ans">
     <!-- header area start -->
     <header class="">
-        <div class="main_container bg-[#F9F6E2] md:flex lg:flex xl:flex justify-between items-center px-4 md:px-5 lg:px-20 xl:px-32 2xl:px-60 pt-10 md:pt-0 lg:pt-0 lg:gap-10">
+        <div class="main_container bg-[#F9F6E2] md:flex lg:flex xl:flex justify-between items-center px-4 md:px-5 lg:px-20 xl:px-32 2xl:px-60 py-10 md:py-8 lg:py-0 xl:py-0 lg:gap-10 justify-items-center lg:h-[70vh] xl:h-[70vh]" >
             <div class="text-center">
                 <h2 class=" text-[#111] text-lg md:text-2xl lg:text-[32px] font-medium mb-5 md:mb-7 lg:mb-11 xl:mb-11">---SALE FEVER---</h2>
-                <h1 class=" text-[#111] text-3xl md:text-4xl lg:text-4xl xl:text-6xl font-bold mb-5 md:mb-7 lg:mb-11 xl:mb-11">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
+                <h1 class=" text-[#111] text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-5 md:mb-7 lg:mb-11 xl:mb-11">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
                 <span class="flex justify-center items-center gap-5">
                     <p>Use Promo Code</p>
                     <button class="bg-[#E527B2] px-6 py-2 rounded-lg text-2xl font-semibold text-white hover:text-black">SELL200</button>
@@ -191,7 +191,7 @@
                 <div class="bg-white rounded-lg p-4 mb-4">
                     <h3 class="text-2xl text-[#111] font-medium mb-2">Have coupon?</h3>
                     <span class="flex gap-0">
-                        <input class=" rounded-l-lg px-3 py-2 w-[60%] m-0 outline-none" style="border: 1px solid gray; border-right: none;" type="text" placeholder="Coupon Code">
+                        <input id="cupon_code" class=" rounded-l-lg px-3 py-2 w-[60%] m-0 outline-none" style="border: 1px solid gray; border-right: none;" type="text" placeholder="Coupon Code">
                         <button id="apply_btn" type="button" class=" bg-[#E527B2] text-xl font-semibold text-white px-3 py-2 rounded-r-lg disabled:opacity-50" style="border: 1px solid #E527B2;" disabled>Apply</button>
                     </span>
                 </div>
@@ -201,9 +201,9 @@
                     </div>
                     <hr>
                     <div id="abc" class="mt-5 mb-5">
-                        <p id="" class="text-base text-[#111] mb-2">Total price: <span id="total_price" class="text-gray-400">0.00</span> <span class="text-gray-400">TK</span></p>
-                        <p class="text-base text-[#111] mb-2">Discount : <span class="text-gray-400">0.00</span> <span class="text-gray-400">TK</span></p>
-                        <p id="" class="text-base text-[#111]">Total: <span id="total_amount_btn" class="text-gray-400">0.00</span> <span class="text-gray-400">TK</span></p>
+                        <p id="" class="text-lg text-[#111] mb-2 font-semibold">Total price: <span id="total_price" class="text-gray-400">0.00</span> <span class="text-gray-400">TK</span></p>
+                        <p class="text-lg text-[#111] mb-2 font-semibold">Discount : <span id="discount_count" class="text-gray-400">0.00</span> <span class="text-gray-400">TK</span></p>
+                        <p id="" class="text-lg text-[#111] font-semibold">Total: <span id="total_amount_btn" class="text-gray-400">0.00</span> <span class="text-gray-400">TK</span></p>
                     </div>
                     <hr class="mb-5">
                 </div>

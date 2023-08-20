@@ -56,5 +56,35 @@ function cardOnClick(productInfo) {
     const totalAmountBtn = document.getElementById('total_amount_btn').innerText = currentTotalPrice;
 };
 
+// Apply btn click function
+document.getElementById('apply_btn').addEventListener('click', function (applyCuponCode) {
+    // console.log('apply btn click function called');
+    const cuponCode = document.getElementById('cupon_code').value;
+    // console.log(cuponCode);
+    if (cuponCode === 'SELL200') {
+        // console.log('apply cupon code');
+        const totalPriceOff = document.getElementById('total_price').innerText;
+        const totalPriceOffString = parseFloat(totalPriceOff);
+        // console.log(typeof totalPriceOffString);
+        const discountOff = (totalPriceOffString / 100) * 20;
+        const discountOffToFixed = discountOff.toFixed(2);
+        // console.log(discountOffToFixed);
 
+        const payNow = totalPriceOffString - discountOff;
+        // console.log(payNow);
 
+        const discountCount = document.getElementById('discount_count').innerText = discountOffToFixed;
+        const discountCountString = parseFloat(discountCount);
+        const discountCountToFixed = discountCountString.toFixed(2);
+        // console.log(discountCountToFixed);
+        
+
+        const payNeeded = document.getElementById('total_amount_btn').innerText = payNow.toFixed(2);
+        // console.log(payNeeded);
+        
+    }
+    else {
+        alert('Cupon Code does not match');
+        return;
+    }
+});
