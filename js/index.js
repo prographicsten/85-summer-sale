@@ -48,6 +48,11 @@ function cardOnClick(productInfo) {
     }
     else if (total >= 200 ) {
         applyBtn.removeAttribute('disabled');
+        const useCuponCode = document.getElementById('use_cupon_code').innerText;
+        // console.log(useCuponCode);
+        const cuponAutoFill = document.getElementById('cupon_code').value = useCuponCode;
+        console.log(cuponAutoFill);
+
     }
 
     // =================================================================
