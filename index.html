@@ -208,9 +208,21 @@
                     <hr class="mb-5">
                 </div>
                 <div class="flex justify-center relative -mt-6">
-                    <button id="purchase_btn" type="button" class="bg-[#E527B2] px-6 py-2 rounded-lg text-xl font-semibold text-white disabled:opacity-50" disabled>Make Purchase</button>
-                    <!-- <button type="button" class="px-8 py-3 text-white bg-pink-300 rounded focus:outline-none" disabled>Button</button> -->
+                    <!-- <button id="purchase_btn" type="button" class="bg-[#E527B2] px-6 py-2 rounded-lg text-xl font-semibold text-white disabled:opacity-50" disabled>Make Purchase</button> -->
+                    <button id="purchase_btn" onclick="my_modal_1.showModal()" type="button" class="bg-[#E527B2] px-6 py-2 rounded-lg text-xl font-semibold text-white disabled:opacity-50" disabled>Make Purchase</button>
                 </div>
+                <!-- modal area start -->
+                <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                        <img class="mx-auto" src="images/congo.png" alt="">
+                        <h2 class="font-bold text-lg text-center">Congratulations!</h2>
+                        <p class="pt-3 pb-2 text-center">Your Purchase the product</p>
+                        <div class="modal-action">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button onclick="window.location.href = ('index.html')" class="btn mx-auto btn-secondary">Go Home</button>
+                        </div>
+                    </form>
+                </dialog>
             </div>
         </div>
     </main>
