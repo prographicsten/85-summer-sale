@@ -14,6 +14,7 @@ function cardOnClick(productInfo) {
     p.classList.add('font-medium');
     p.innerHTML = `${count + 1}. ${productInformation}`;
     addProductList.appendChild(p);
+    
 
     const productPrice = productInfo.childNodes[7].childNodes[0].innerText;
     const productPriceString = parseFloat(productPrice);
